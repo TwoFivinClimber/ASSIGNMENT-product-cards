@@ -1,7 +1,14 @@
 
-const avail = document.getElementsByClassName("avilibility");
+const avail = document.getElementsByClassName("availability");
+const soldOut = document.getElementById("sold-out");
 
-
-if (avail.innerHTML === "Unavailable") {
-  document.getElementsByClassName("sold-out").style.display = "";
+for (let i = 0; i < avail.length; i++){
+if (avail[i].innerText === "Available") {
+  soldOut.style.display = " ";
+}else{
+  soldOut.style.display = "none";
+}
 };
+
+
+console.log(avail);
