@@ -1,6 +1,10 @@
+html{
+  width: 1200px;
+}
 body{
   background-color: lightseagreen;
   font-family: 'PT Sans Narrow', sans-serif;
+  
 }
 .container{
   display: flex;
@@ -8,7 +12,7 @@ body{
   justify-content: space-around;
 }
 .card-img-top{
-  display: block;
+  display: block; 
   height: 250px;
   width: 250px;
   margin-left: auto;
@@ -21,7 +25,7 @@ body{
   margin-right: auto;
   height: 250px;
   width: 300px;
-  display: none;
+
   
 }
 .ind-card{
@@ -44,7 +48,7 @@ h2{
 .card-text{
   height: 140px;
 }
-.avilibility{
+.availibility{
   display: block;
   background-color: lightgrey;
   width: 100%;
