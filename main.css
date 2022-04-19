@@ -1,11 +1,11 @@
-html{
+html {
   width: 1200px;
 }
-body{
+body {
   background-color: lightseagreen;
-  font-family: 'PT Sans Narrow', sans-serif;
-  
+  font-family: "PT Sans Narrow", sans-serif;
 }
+/* }
 .container{
   display: flex;
   flex-wrap: wrap;
@@ -66,4 +66,32 @@ ul{
   list-style: none;
   text-align: left;
   margin-left: -30px;
+} */
+h1 {
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 6px;
+  width: 300px;
+}
+
+.product-image {
+  position: relative;
+}
+.product-image.sold-out img.featured-image {
+  opacity: 50%;
+}
+
+.product-image img.sold-out-image {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100px;
+  height: 100px;
 }
