@@ -9,7 +9,8 @@ const products = [
     size: "70 Meter",
     weight: "9.5 Lbs",
     price: "$200",
-    remainingStock: 0,
+    remainingStock: 7,
+    featured: true,
   },
   {
     id: 2,
@@ -21,7 +22,8 @@ const products = [
     size: "Mens 5-13",
     weight: "1.2 lbs",
     price: "$98",
-    remainingStock: 12,
+    remainingStock: 5,
+    featured: false,
   },
   {
     id: 3,
@@ -33,7 +35,8 @@ const products = [
     size: "4in x 4in x 1.5in",
     weight: "4oz",
     price: "$3.75",
-    remainingStock: 15,
+    remainingStock: 8,
+    featured: false,
   },
   {
     id: 4,
@@ -45,7 +48,8 @@ const products = [
     size: "XS, S, M, L, XL",
     weight: "12.8oz",
     price: "$98",
-    remainingStock: 12,
+    remainingStock: 10,
+    featured: false,
   },
   {
     id: 5,
@@ -57,7 +61,8 @@ const products = [
     size: "XS, S, M, L, XL",
     weight: "8.2oz",
     price: "$68",
-    remainingStock: 12,
+    remainingStock: 8,
+    featured: false,
   },
   {
     id: 6,
@@ -70,6 +75,7 @@ const products = [
     weight: "6oz - 32oz",
     price: "$78 - $120",
     remainingStock: 1,
+    featured: false,
   },
 ];
 
