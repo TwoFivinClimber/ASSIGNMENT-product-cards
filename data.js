@@ -10,7 +10,7 @@ const products = [
     weight: "9.5 Lbs",
     price: "$200",
     remainingStock: 7,
-    featured: true,
+    featured: false,
   },
   {
     id: 2,
@@ -23,14 +23,14 @@ const products = [
     weight: "1.2 lbs",
     price: "$98",
     remainingStock: 5,
-    featured: false,
+    featured: true,
   },
   {
     id: 3,
     name: "Chalk",
     image: "images/chalk.webp",
     description:
-      "halk for you hands, chalk for you knees, chalk for you to let everyone know that you're a climber.  It keep your fingers dry.  That should be enough.",
+      "Chalk for you hands, chalk for you knees, chalk for you to let everyone know that you're a climber.  It keep your fingers dry.  That should be enough.",
     availability: "Available",
     size: "4in x 4in x 1.5in",
     weight: "4oz",

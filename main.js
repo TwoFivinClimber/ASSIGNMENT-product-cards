@@ -11,7 +11,9 @@ const cardRender = (arr) => {
     const soldOut = productObj.remainingStock === 0;
     const featProd = productObj.featured === true;
     cardString += `<div class="card" id="product-card">
-    <div id="featured" class="featured"></div>
+    <div id="featured" class="featured">${
+      featProd ? "Featured Product" : ""
+    }</div>
 <div class="product-image ${soldOut ? "sold-out" : ""}">
 <img src="${productObj.image}" class="card-img-top featured-image" alt="...">
 <img src="images/soldOut.png" class="sold-out-image ${
@@ -26,6 +28,7 @@ const cardRender = (arr) => {
   <li class="list-group-item">${productObj.availability}</li>
   <li class="list-group-item">${productObj.size}</li>
   <li class="list-group-item">${productObj.price}</li>
+  <li class="list-group-item">${productObj.remainingStock} In Stock</li>
 </ul>
 <div class="card-body">
   <button id="buyBtn--${productObj.id}" ${
@@ -51,20 +54,10 @@ const buyNow = () => {
     }
   });
 };
-const featured = (arr) => {
-  let feat = document.querySelector("#featured").innerHTML;
-  for (const prodObj of arr) {
-    if (prodObj.featured === true) {
-      feat = "Featured";
-    } else {
-      console.log("not featured");
-    }
-  }
-};
 
 const onStart = () => {
   cardRender(products);
-  featured(products);
+  // featured(products);
   buyNow();
 };
 
